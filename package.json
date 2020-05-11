@@ -1,6 +1,6 @@
 {
   "name": "ocs-parallax",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A simple, lightweight parallax package",
   "main": "index.js",
   "scripts": {
