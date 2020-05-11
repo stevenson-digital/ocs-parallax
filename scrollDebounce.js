@@ -25,6 +25,6 @@ const scrollDebounce = {
   update() {
     // Reset the tick so we can capture the next onScroll
     ticking = false
-    parallax.triggerAnimations(Math.round(latestKnownScrollY))
+    parallax.move(Math.round(latestKnownScrollY))
   }
 }

@@ -24,7 +24,7 @@ const parallax = {
     parallaxElements.each(function(i, element) {
       const $el = $(element)
 
-      if ($window.width() > 1024 && isInExtendedViewport($el)) {
+      if ($window.width() > 1024 && parallax.isInExtendedViewport($el)) {
         // Create parallax effect
         const speed = ($el.attr('data-speed')) ? $el.attr('data-speed') : 10
         const st = currentScrollY
@@ -32,7 +32,7 @@ const parallax = {
         const amountScrolled = st - elTop
         const offset = ($el.attr('data-offset')) ? $el.attr('data-offset') : 0
         const scroll = ($el.attr('data-is-top')) ? currentScrollY : amountScrolled
-        const movement = ($el.attr('data-direction') === 'up') ? 1 - (scroll / speed) - offset : (scroll / speed) - offset
+        const movement = ($el.attr('data-direction') === 'down') ? (scroll / speed) - offset : 1 - (scroll / speed) - offset 
 
         $el.css('transform', `translate3d(0px, ${Math.round(movement)}px, 0)`)
 

@@ -1,0 +1,22 @@
+{
+  "name": "ocs-parallax",
+  "version": "1.0.0",
+  "description": "A simple, lightweight parallax package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevenson-digital/ocs-parallax.git"
+  },
+  "keywords": [
+    "parallax"
+  ],
+  "author": "Ollie Stevenson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevenson-digital/ocs-parallax/issues"
+  },
+  "homepage": "https://github.com/stevenson-digital/ocs-parallax#readme"
+}
